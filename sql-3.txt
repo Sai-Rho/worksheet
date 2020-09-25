@@ -1,0 +1,172 @@
+                                                    SQL WORKSHEET-3 
+                   
+Refer the following ERD and answer all the questions in this worksheet. You have to write the queries using mysql 
+for the required Operation.
+
+1. Write SQL query to create table Customers.
+
+   Answer: CREATE TABLE customers (
+                                    customerNumber int,
+                                    customerName varchar(255),
+                                    customerLastName varchar(255),
+                                    customerFirstName varchar(255),
+                                    phone int,
+                                    addressLine1 varchar(255),
+                                    addressLine2 varchar(255),
+                                    city varchar(255),
+                                    state varchar(255),
+                                    postalCode varchar(255),
+                                    country varchar(255),
+                                    salesRepEmployeeNumber varchar(255),
+                                    creditLimit float
+                                );
+                            
+                            
+                                
+2. Write SQL query to create table Orders.
+
+    Answer: CREATE TABLE orders (
+                                    orderNumber int,
+                                    productCode varchar(255),
+                                    orderDate DATE,
+                                    requiredDate DATE,
+                                    shipped DATE,
+                                    status varchar(255),
+                                    comments varchar(255),
+                                    customerNumber int
+                                );
+                                  
+                                  
+3. Write SQL query to show all the columns data from the Orders Table. 
+
+    Answer: DESCRIBE orders;
+    
+
+
+4. Write SQL query to show all the comments from the Orders Table.
+
+    Answer: SELECT comments FROM orders;
+    
+    
+    
+5. Write a SQL query to show orderDate and Total number of orders placed on that date, from Orders table.
+
+    Answer: SELECT orderDate, orderNumber
+    
+            FROM orders
+            
+            WHERE orderDate=*********;
+    
+    
+    
+6. Write a SQL query to show employeNumber, lastName, firstName of all the employees from employees table.
+    
+    Answer: SELECT  employeNumber, lastName, firstName
+    
+            FROM employees  
+
+
+
+7. Write a SQL query to show all orderNumber, customerName of the person who placed the respective order.
+
+    Answer:  SELECT  orderNumber, customerName
+    
+             FROM employees    
+             
+             WHERE customerName = ******** ;
+    
+    
+
+8. Write a SQL query to show name of all the customers in one column and salerepemployee name in another column.
+    
+    Answer: SELECT customerName, salerepemployeeName
+        
+            FROM customers
+
+
+
+9. Write a SQL query to show Date in one column and total payment amount of the payments made on that date from the payments table.
+
+    Answer:1) SELECT paymentDate, amount
+    
+              FROM payments
+            
+            
+           2) SELECT paymentDate, amount
+    
+              FROM payments
+              
+              WHERE paymentDate = ****;
+              
+              
+
+10. Write a SQL query to show all the products productName, MSRP, productDescription from the products table.
+
+    aNSWER: SELECT productName, MSRP, productDescription
+        
+            FROM products
+            
+            
+            
+11. Write a SQL query to print the productName, productDescription of the most ordered product.
+
+    Answer: SELECT Top productName, productDescription, COUNT(productName) AS most_order
+            
+            FROM products
+            
+            Group By productName
+            
+            order by COUNT(productName) desc;
+        
+            
+    
+12. Write a SQL query to print the city name where maximum number of orders were placed.
+
+    Answer: SELECT city 
+    
+            FROM customers
+            
+            GROUP BY city 
+            
+            ORDER BY COUNT(*) DESC;
+            
+            
+            
+13. Write a SQL query to get the name of the state having maximum number of customers.
+
+    Answer: SELECT state 
+    
+            FROM customers
+            
+            GROUP BY state 
+            
+            ORDER BY COUNT(*) DESC;
+
+
+
+14. Write a SQL query to print the employee number in one column and Full name of the employee in the second column for all the employees.
+
+    Answer: SELECT employeeNumber, CONCAT(firstName,'',lastName) as name
+    
+            FROM employees
+
+
+
+
+15. Write a SQL query to print the orderNumber, customer Name and total amount paid by the customer for that order 
+    (quantityOrdered × priceEach).
+
+    Answer: SELECT orderNumber, customerName, amount
+    
+            FROM orders, payments
+            
+            WHERE orders.orderNumber = payments.orderNumber
+            
+            order by amount, customerName
+
+
+
+
+
+
+
