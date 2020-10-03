@@ -1,0 +1,195 @@
+                                               MACHINE LEARNING – WORKSHEET 2 
+                                               
+In Q1 to Q5, only one option is correct, Choose the correct option: 
+
+1. In which of the following you can say that the model is overfitting? 
+    
+    A) High R-squared value for train-set and High R-squared value for test-set. 
+    B) Low R-squared value for train-set and High R-squared value for test-set. 
+    C) High R-squared value for train-set and Low R-squared value for test-set. 
+    D) None of the above 
+    
+    Answer: C) High R-squared value for train-set and Low R-squared value for test-set.  
+    
+    
+2. Which among the following is a disadvantage of decision trees?      
+
+    A) Decision trees are prone to outliers.
+    B) Decision trees are highly prone to overfitting. 
+    C) Decision trees are not easy to interpret 
+    D) None of the above. 
+    
+    Answer: B) Decision trees are highly prone to overfitting
+    
+    
+3. Which of the following is an ensemble technique?    
+
+    A) SVM      
+    B) Logistic Regression 
+    C) Random Forest     
+    D) Decision tree
+    
+    Answer:  C) Random Forest   
+    
+4. Suppose you are building a classification model for detection of a fatal disease where detection of the
+   disease is most important. In this case which of the following metrics you would focus on? 
+   
+    A) Accuracy     
+    B) Sensitivity
+    C) Precision      
+    D) None of the above.
+    
+    Answer:  A) Accuracy 
+    
+    
+5. The value of AUC (Area under Curve) value for ROC curve of model A is 0.70 and of model B is 0.85. 
+   Which of these two models is doing better job in classification? 
+    
+    A) Model A      
+    B) Model B 
+    C) both are performing equal    
+    D) Data Insufficient
+    
+    Answer: B) Model B 
+    
+    
+In Q6 to Q9, more than one options are correct, Choose all the correct options: 
+
+6. Which of the following are the regularization technique in Linear Regression?
+
+    A) Ridge      
+    B) R-squared  
+    C) MSE     
+    D) Lasso 
+    
+    Answer: A) Ridge
+            D) Lasso 
+            
+    
+7. Which of the following is not an example of boosting technique?     
+
+    A) Adaboost
+    B) Decision Tree
+    C) Random Forest
+    D) Xgboost
+    
+    Answer: B) Decision Tree
+            C) Random Forest
+    
+    
+8. Which of the techniques are used for regularization of Decision Trees?  
+
+    A) Pruning  
+    B) L2 regularization
+    C) Restricting the max depth of the tree
+    D) All of the above 
+    
+    Answer: A) Pruning
+            C) Restricting the max depth of the tree
+            
+
+9. Which of the following statements is true regarding the Adaboost technique?
+
+    A) We initialize the probabilities of the distribution as 1/n, where n is the number of data-points 
+    B) A tree in the ensemble focuses more on the data points on which the previous tree was not performing well 
+    C) It is example of bagging technique 
+    D) None of the above 
+    
+    Answer: A) We initialize the probabilities of the distribution as 1/n, where n is the number of data-points 
+            C) It is example of bagging technique 
+
+    
+    
+Q10 to Q15 are subjective answer type questions, Answer them briefly. 
+
+10. Explain how does the adjusted R-squared penalize the presence of unnecessary predictors in the model? 
+
+    Answer: The adjusted R-squared is a modified version of R-squared that has been adjusted for the number 
+            of predictors in the model. The adjusted R-squared increases only if the new term improves the model 
+            more than would be expected by chance. It decreases when a predictor improves the model by less than 
+            expected by chance. The adjusted R2 will penalize you for adding independent variables that do not fit
+            the model. Some of those variables will be significant, but you can’t be sure that significance is just 
+            by chance. The adjusted R2 will compensate for this by that penalizing you for those extra variables.
+            While values are usually positive, they can be negative as well. This could happen if your R2 is zero. 
+            After the adjustment, the value can dip below zero. This usually indicates that your model is a poor fit
+            for your data. Other problems with your model can also cause sub-zero values, such as not putting a constant
+            term in your model.
+
+
+11. Differentiate between Ridge and Lasso Regression. 
+
+    Answer: Ridge regression belongs a class of regression tools that use L2 regularization. 
+    
+            The other type of regularization, L1 regularization, limits the size of the coefficients by adding an 
+            L1 penalty equal to the absolute value of the magnitude of coefficients. 
+            
+            This sometimes results in the elimination of some coefficients altogether, which can yield  sparse models. 
+            
+            L2 regularization adds an L2 penalty, which equals the square of the magnitude of coefficients. 
+            
+            All coefficients are shrunk by the same factor (so none are eliminated). Unlike L1 regularization, L2 will not 
+            result in sparse models.
+            
+            
+            Lasso regression performs L1 regularization, which adds a penalty equal to the absolute value of the 
+            magnitude of coefficients. 
+            
+            This type of regularization can result in sparse models with few coefficients, Some coefficients can become 
+            zero and eliminated from the model. 
+            
+            Larger penalties result in coefficient values closer to zero, which is the ideal for producing simpler models. 
+            
+            On the other hand, L2 regularization (e.g. Ridge regression) doesn’t result in elimination of coefficients or sparse models. 
+                
+            This makes the Lasso far easier to interpret than the Ridge.
+
+
+
+12. What is VIF? What is the suitable value of a VIF for a feature to be included in a regression modelling?
+
+    Answer: Variance inflation factor (VIF) is a measure of the amount of multicollinearity in a set of multiple
+            regression variables. Mathematically, the VIF for a regression model variable is equal to the ratio of 
+            the overall model variance to the variance of a model that includes only that single independent variable. 
+            This ratio is calculated for each independent variable. A high VIF indicates that the associated independent
+            variable is highly collinear with the other variables in the model.
+            
+            We can use to determine whether our VIFs are in an acceptable range. 
+            
+            A rule of thumb commonly used in practice is if a VIF is > 10, 
+            you have high multicollinearity. 
+            In our case, with values around 1 and can proceed with our regression. 
+
+
+
+13. Why do we need to scale the data before feeding it to the train the model?
+
+    Answer: Feature Scaling, It is a step of Data Pre Processing which is applied to independent variables or 
+            features of data. It basically helps to normalise the data within a particular range. 
+            This means that you're transforming your data so that it fits within a specific scale, like 0-100 or 0-1. 
+            You want to scale data when you're using methods based on measures of how far apart data points, 
+            like support vector machines, or SVM or k-nearest neighbors, or KNN. With these algorithms,
+            a change of "1" in any numeric feature is given the same importance.
+
+
+
+14. What are the different metrics which are used to check the goodness of fit in linear regression? 
+
+    Answer: 1. R Squared
+            2. Adjusted R Squared
+            3. F Statistics
+            4. RMSE
+            5. MSE
+            6. MAE 
+            are some metrics which you can use to check the goodness and evaluate your regression model.
+
+
+
+15. From the following confusion matrix calculate sensitivity, specificity, precision, recall and accuracy. 
+            Actual/Predicted       True          False
+            True                   1000            50
+            False                   250          1200
+
+    Answer: 1. sensitivity : 0.95
+            2. specificity : 0.82
+            3. precision   : 0.80
+            4. accuracy    : 0.88 
