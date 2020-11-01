@@ -1,0 +1,215 @@
+                                                    Statistics– WORKSHEET 4
+                                                    
+                                                    
+Q1 to Q9 have only one correct answer. Choose the correct option to answer your question.
+
+1. Bernoulli random variables take (only) the values 1 and 0.
+    a) True
+    b) False
+    
+    Answer: a) True
+    
+    
+2. Which of the following theorem states that the distribution of averages of iid variables, properly normalized, 
+   becomes that of a standard normal as the sample size increases?
+    a) Central Limit Theorem
+    b) Central Mean Theorem
+    c) Centroid Limit Theorem
+    d) All of the mentioned
+    
+    Answer: a) Central Limit Theorem
+    
+    
+3. Which of the following is incorrect with respect to use of Poisson distribution?
+    a) Modeling event/time data
+    b) Modeling bounded count data
+    c) Modeling contingency tables
+    d) All of the mentioned
+    
+    Answer:  b) Modeling bounded count data
+    
+    
+4. Point out the correct statement.
+    a) The exponent of a normally distributed random variables follows what is called the lognormal distribution
+    b) Sums of normally distributed random variables are again normally distributed even if the variables are dependent
+    c) The square of a standard normal random variable follows what is called chi-squared distribution
+    d) All of the mentioned
+    
+    Answer: a) The exponent of a normally distributed random variables follows what is called the lognormal distribution
+    
+    
+5. __________ random variables are used to model rates.
+    a) Empirical
+    b) Binomial
+    c) Poisson
+    d) All of the mentioned
+    
+    Answer: c) Poisson
+    
+    
+6. Usually replacing the standard error by its estimated value does change the CLT.
+    a) True
+    b) False
+    
+    Answer: b) False
+    
+    
+7. Which of the following testing is concerned with making decisions using data?
+    a) Probability
+    b) Hypothesis
+    c) Causal
+    d) None of the mentioned
+    
+    Answer: b) Hypothesis
+    
+    
+8. Normalized data are centered at ___ and have units equal to standard deviations of the original data.
+    a) 0
+    b) 5
+    c) 1
+    d) 10
+    
+    Answer: a) 0
+    
+    
+9. Which of the following statement is incorrect with respect to outliers?
+    a) Outliers can have varying degrees of influence
+    b) Outliers can be the result of spurious or real processes
+    c) Outliers cannot conform to the regression relationship
+    d) None of the mentioned
+    
+    Answer: c) Outliers cannot conform to the regression relationship
+    
+    
+Q10and Q15 are subjective answer type questions, Answer them in your own words briefly.
+
+10. What do you understand by the term Normal Distribution?
+    
+    Answer: Normal distribution, also known as the Gaussian distribution, is a probability distribution that is 
+            symmetric about the mean, showing that data near the mean are more frequent in occurrence than data 
+            far from the mean. In graph form, normal distribution will appear as a bell curve.
+               
+                1. A normal distribution is the proper term for a probability bell curve.
+                2. In a normal distribution the mean is zero and the standard deviation is 1. It has zero skew and a kurtosis of 3.
+                3. Normal distributions are symmetrical, but not all symmetrical distributions are normal.
+                4. In reality, most pricing distributions are not perfectly normal.
+           
+            The normal distribution is the most common type of distribution assumed in technical stock market 
+            analysis and in other types of statistical analyses. The standard normal distribution has two parameters 
+            the mean and the standard deviation.    
+    
+    
+11. How do you handle missing data? What imputation techniques do you recommend?
+
+    Answer:  Handling the missing values is one of the greatest challenges faced by analysts, because making 
+             the right decision on how to handle it generates robust data models. Let us look at different ways 
+             of imputing the missing values.
+             
+             1. Deleting Rows
+                This method commonly used to handle the null values. Here, we either delete a particular row if it
+                has a null value for a particular feature and a particular column if it has more than 70-75% of missing 
+                values. This method is advised only when there are enough samples in the data set. 
+                One has to make sure that after we have deleted the data, there is no addition of bias. 
+                Removing the data will lead to loss of information which will not give the expected results while predicting the output. 
+                Complete removal of data with missing values results in robust and highly accurate model.
+                Deleting a particular row or a column with no specific information is better, since it does not have a high weightage
+    
+             2. Replacing With Mean/Median/Mode
+                This strategy can be applied on a feature which has numeric data like the age of a person or the ticket fare. 
+                We can calculate the mean, median or mode of the feature and replace it with the missing values. 
+                This is an approximation which can add variance to the data set.
+                Replacing with the above three approximations are a statistical approach of handling the missing values. 
+                This method is also called as leaking the data while training. 
+                Another way is to approximate it with the deviation of neighbouring values. This works better if the data is linear.  
+                This is a better approach when the data size is small.
+                It can prevent data loss which results in removal of the rows and columns.
+    
+             3. Assigning An Unique Category
+                A categorical feature will have a definite number of possibilities, such as gender, for example. 
+                Since they have a definite number of classes, we can assign another class for the missing values. 
+                Here, the features Cabin and Embarked have missing values which can be replaced with a new category,
+                say, U for ‘unknown’. 
+                This strategy will add more information into the dataset which will result in the change of variance. 
+                Less possibilities with one extra category, resulting in low variance after one hot encoding 
+                since it is categorical Negates the loss of data by adding an unique category
+                
+             4. Predicting The Missing Values
+                Using the features which do not have missing values, we can predict the nulls with the help of a 
+                machine learning algorithm. 
+                This method may result in better accuracy, unless a missing value is expected to have a very high variance. 
+                We will be using linear regression to replace the nulls in the feature ‘age’, using other available features. 
+                One can experiment with different algorithms and check which gives the best accuracy instead of sticking to
+                a single algorithm.
+                
+             5. Using Algorithms Which Support Missing Values
+                KNN is a machine learning algorithm which works on the principle of distance measure. 
+                This algorithm can be used when there are nulls present in the dataset. While the algorithm is applied, 
+                KNN considers the missing values by taking the majority of the K nearest values. 
+                In this particular dataset, taking into account the person’s age, sex, class etc, we will assume that 
+                people having same data for the above mentioned features will have the same kind of fare.
+                Algorithm which can be used here is RandomForest. This model produces a robust result because it works 
+                well on non-linear and the categorical data. 
+                It adapts to the data structure taking into consideration of the high variance or the bias, producing 
+                better results on large datasets.
+                Does not require creation of a predictive model for each attribute with missing data in the dataset.
+                Correlation of the data is neglected.
+    
+    
+12. What is A/B testing ?
+
+    Answer: A/B testing also known as bucket testing or split-run testing is a user experience research methodology.
+            A/B tests consist of a randomized experiment with two variants, A and B.
+            It includes application of statistical hypothesis testing or "two-sample hypothesis testing" as used in 
+            the field of statistics. 
+            A/B testing is a way to compare two versions of a single variable, typically by testing a subject's response
+            to variant A against variant B, and determining which of the two variants is more effective.
+    
+      
+13. Is mean imputation of missing data acceptable practice?
+
+    Answer: Mean imputation also called mean substitution really ought to be a last resort. 
+            It’s a popular solution to missing data, despite its drawbacks.
+            Mainly because it’s easy. It can be really painful to lose a large part of the sample you so carefully collected, 
+            only to have little power.
+            But that doesn’t make it a good solution, and it may not help you find relationships with strong parameter estimates. 
+            Even if they exist in the population.
+            On the other hand, there are many alternatives to mean imputation that provide much more accurate estimates and 
+            standard errors, so there really is no excuse to use it.
+
+    
+14. What is linear regression in statistics?
+
+    Answer: In statistics, linear regression is a linear approach to modeling the relationship between a  dependent variable 
+            and independent variables. The case of one explanatory variable is called simple linear regression. 
+            For more than one explanatory variable, the process is called multiple linear regression.
+            This term is distinct from multivariate linear regression, where multiple correlated dependent variables are predicted, 
+            rather than a single scalar variable.
+
+    
+15. What are the various branches of statistics?
+
+    Answer: It is essential to understand the whole idea of statistical analysis for you to feel the beauty of it. 
+            The two branches of statistics are 
+                                1. Descriptive statistics 
+                                2. Inferential statistics
+            
+            Descriptive statistics is considered as the first part of statistical analysis which deals with collection 
+            and presentation of data. 
+            Scientifically, descriptive statistics can be defined as brief explanatory coefficients that are used by 
+            statisticians to summarize a given data set. 
+            Generally, a data set can either represent a sample of a population or the entire populations. 
+            Descriptive statistics can be categorized into
+                               1. Measures of central tendency
+                               2. Measures of variability
+
+            Measures of Central Tendency
+                Measures of central tendency specifically help the statisticians to estimate the center of values distribution. 
+                These measures of tendency are:
+                    1. Mean
+                    2. Median
+                    3. Mode
+            Measures of Variability
+                The measure of variability help statisticians to analyze the distribution spread out of a given set of data. 
+                Some of the examples of measures of variability include quartiles, range, variance and standard deviation.        
+    
+    
