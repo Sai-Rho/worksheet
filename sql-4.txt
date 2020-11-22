@@ -1,0 +1,131 @@
+                                                            SQL – WORKSHEET 4
+                                                            
+Refer the following ERD and answer all the questions in this worksheet. You have to write the queries using
+MySQL for the required Operation.
+
+ Customers: stores customer’s data.
+ Products: stores a list of scale model cars.
+ ProductLines: stores a list of product line categories.
+ Orders: stores sales orders placed by customers.
+ OrderDetails: stores sales order line items for each sales order.
+ Payments: stores payments made by customers based on their accounts.
+ Employees: stores all employee information as well as the organization structure such as who reports to whom.
+ Offices: stores sales office data.
+
+QUESTIONS:
+
+1. Write SQL query to show average number of orders shipped in a day (use Orders table).
+
+    Answer:  SELECT AVG(shippedDate)
+             FROM orders
+             GROUP BY orderDate;
+    
+    
+2. Write SQL query to show average number of orders placed in a day.
+
+    Answer:   SELECT AVG(orderNumber)
+              FROM orders
+              GROUP BY orderDate;
+    
+    
+3. Write SQL query to show the product name with minimum MSRP (use Products table).
+
+    Answer:  SELECT MIN(MSRP)
+             FROM products
+             
+    
+4. Write SQL query to show the product name with maximum value of stockQuantity.
+
+    Answer:  SELECT MAX(quantityInStock)
+             FROM products
+             
+    
+5. Write a query to show the most ordered product Name (the product with maximum number of orders).
+
+    Answer:
+    
+    
+6. Write a SQL query to show the highest paying customer Name.
+
+    Answer: SELECT customerName
+            FROM products
+            WHERE amount = (
+            SELECT amount 
+            FROM payments 
+            WHERE amount = (SELECT MAX(amount) 
+            FROM payments)
+    
+       
+7. Write a SQL query to show cutomerNumber, customerName of all the customers who are from Melbourne city.
+
+    Answer: SELECT customerNumber, customerName
+            FROM customers
+            WHERE city = 'Melbourne';
+    
+    
+8. Write a SQL query to show name of all the customers whose name start with “N”.
+
+    Answer: SELECT *
+            FROM customers
+            WHERE customerName LIKE 'N%';
+    
+    
+    
+9. Write a SQL query to show name of all the customers whose phone start with ‘^7.*’ and are from city ‘Las Vegas’.
+
+    Answer: SELECT *
+            FROM customers
+            WHERE phone LIKE '7%' AND city = 'Las Vegas';
+    
+    
+10. Write a SQL query to show name of all the customers whose creditLimit < 1000 and city is either “Las Vegas” or ”Nantes” or “Stavern”.
+
+    Answer: SELECT *
+            FROM customers
+            WHERE creditLimit < 1000 AND (city = 'Las Vegas' OR city = 'Nantes' OR city = 'Stavern');
+    
+    
+11. Write a SQL query to show all the orderNumber in which quantity ordered <10.
+
+    Answer: SELECT COUNT(oredrName) as orno
+            FROM orders
+            WHERE orno < 10 ;
+    
+    
+12. Write a SQL query to show all the orderNumber whose customer Name start with letter N.
+
+    Answer: SELECT orderNumber
+            FROM orders
+            WHERE customerName =
+                (SELECT customerName 
+                 FROM customers 
+                 WHERE customerName LIKE 'N%');
+    
+    
+13. Write a SQL query to show all the customerName whose orders are “Disputed” in status.
+
+    Answer: SELECT customerName
+            FROM customers
+            WHERE status =
+                (SELECT status 
+                 FROM orders 
+                 WHERE status= 'Disputed');
+    
+    
+14. Write a SQL query to show the customerName who made payment through cheque with checkNumber starting
+    with H and made payment on “2004-10-19”.
+    
+    Answer: SELECT customerName
+            FROM customers
+            WHERE checkNumber =
+                (SELECT checkNumber 
+                 FROM payments 
+                 WHERE checkNumber LIKE 'H%');
+
+
+15. Write a SQL query to show all the checkNumber whose amount > 1000.
+
+    Answer: SELECT checkNumber
+            FROM payments
+            WHERE amount > 1000 ;
+        
