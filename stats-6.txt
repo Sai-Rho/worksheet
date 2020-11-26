@@ -1,0 +1,164 @@
+                                                    Statistics– WORKSHEET 6
+                                                    
+Q1 to Q9 have only one correct answer. Choose the correct option to answer your question.
+
+1. Which of the following is the correct formula for total variation?
+    a) Total Variation = Residual Variation – Regression Variation
+    b) Total Variation = Residual Variation + Regression Variation
+    c) Total Variation = Residual Variation * Regression Variation
+    d) All of the mentioned
+    
+    Answer: b) Total Variation = Residual Variation + Regression Variation
+    
+    
+2. Collection of exchangeable binary outcomes for the same covariate data are called outcomes.
+    a) random
+    b) direct
+    c) binomial
+    d) none of the mentioned
+    
+    Answer: c) binomial
+    
+    
+3. How many outcomes are possible with bernoulli trial?
+    a) 2
+    b) 3
+    c) 4
+    d) None of the mentioned
+    
+    Answer: a) 2
+    
+    
+4. If Ho is true and we reject it, then it is called:
+    (a) Type-I error
+    (b) Type-II error
+    (c) Standard error
+    (d) Sampling error
+    
+    Answer: (a) Type-I error
+    
+    
+5. Level of significance is also called:
+    (a) Power of the test
+    (b) Size of the test
+    (c) Level of confidence
+    (d) Confidence coefficient
+    
+    Answer: (c) Level of confidence
+    
+    
+6. The chance of rejecting a true hypothesis decreases when sample size:
+    (a) Decreases
+    (b) Increases
+    (c) Both of them
+    (d) None of them
+    
+    Answer:  (b) Increases
+    
+    
+7. Which of the following testing is concerned with making decisions using data?
+    (a) Probability
+    (b) Hypothesis
+    (c) Causal
+    (d) None of the mentioned
+    
+    Answer:  (b) Hypothesis
+    
+    
+8. What is the purpose of multiple testing in statistical inference?
+    (a) Minimize errors
+    (b) Minimize false positives
+    (c) Minimize false negatives
+    (d) All of the mentioned
+    
+    Answer: (d) All of the mentioned
+    
+    
+9. Normalized data is centered at and has unit equal to standard deviations of the original data.
+    (a) 0 
+    (b) 5
+    (c) 1 
+    (d) 10
+    
+    Answer:  (a) 0 
+    
+    
+Q10and Q15 are subjective answer type questions, Answer them in your own words briefly.
+
+10. What Is Bayes' Theorem?
+    Answer: Bayes' Theorem is a simple mathematical formula used for calculating conditional probabilities. 
+            Bayes' Theorem is a way of finding a probability when we know certain other probabilities.
+
+                    formula :          P(A|B) =  P(A) P(B|A)P(B) 
+
+            Which tells us: how often A happens given that B happens, written P(A|B),
+            When we know: how often B happens given that A happens, written P(B|A)
+                    and how likely A is on its own, written P(A)
+                    and how likely B is on its own, written P(B)
+    
+    
+11. What is z-score?
+    Answer: A Z-score is a numerical measurement that describes a value's relationship to the mean of a group of values. 
+            Z-score is measured in terms of standard deviations from the mean. 
+            If a Z-score is 0, it indicates that the data point's score is identical to the mean score.
+            A Z-score of 1.0 would indicate a value that is one standard deviation from the mean. 
+            Z-scores may be positive or negative, with a positive value indicating the score is above the mean and a negative score
+            indicating it is below the mean.
+
+                                         
+                                         Z = x - mu / sigma
+                                         
+                            Z = standard score
+                            x = observed value
+                            mu = mean of the sample
+                            sigma = standard deviation of the sample
+
+
+    
+12. What is t-test? 
+    Answer: A t-test is a type of inferential statistic used to determine if there is a significant difference between 
+            the means of two groups, which may be related in certain features. It is mostly used when the data sets, 
+            like the data set recorded as the outcome from flipping a coin 100 times, would follow a normal distribution 
+            and may have unknown variances. A t-test is used as a hypothesis testing tool, which allows testing of an 
+            assumption applicable to a population. 
+                            
+                            t=m-mu / { s / sqrt{n}}
+                          
+                            t = Student's t-test
+                            m = mean
+                            mu = theoretical value
+                            s = standard deviation
+                            {n} = variable set size
+
+
+13. What is a percentile?
+    Answer: A percentile is a type of quantile which divides the given probability distribution, or sample, 
+            into 100 equal-sized intervals; this allows the data to be analyzed in terms of percentages. 
+            For example, the 20th percentile is the value below which 20% of the observations are found, and above which 80% are found.
+    
+    
+14. What is ANOVA?
+    Answer: Analysis of variance (ANOVA) is an analysis tool used in statistics that splits an observed aggregate variability 
+            found inside a data set into two parts: systematic factors and random factors. The systematic factors have a 
+            statistical influence on the given data set, while the random factors do not. 
+            Analysts use the ANOVA test to determine the influence that independent variables have on the dependent 
+            variable in a regression study.
+
+                            F=  MSE / MST
+                           
+                           where:
+                            F=ANOVA coefficient
+                            MST=Mean sum of squares due to treatment
+                            MSE=Mean sum of squares due to error
+
+    
+15. How can ANOVA help?
+    Answer: Developed by Ronald Fisher, ANOVA stands for Analysis of Variance. One-Way Analysis of Variance tells you if there 
+            are any statistical differences between the means of three or more independent groups.
+            The one-way ANOVA can help you know whether or not there are significant differences between the means of your
+            independent variables. When you understand how each independent variable’s mean is different from the others,
+            you can begin to understand which of them has a connection to your dependent variable ,
+            and begin to learn what is driving that behavior.
+    
+    
+    
