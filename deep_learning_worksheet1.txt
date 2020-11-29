@@ -1,0 +1,192 @@
+                                                     DEEP LEARNING WORKSHEET-1
+
+Q1 to Q8 are MCQs with only one correct answer. Choose the correct option.
+
+1. Which of the following can approximate any function universally (i.e. universal approximators)?
+    A) Boosted Decision Trees 
+    B) Neural Networks
+    C) Kernel SVM 
+    D) All of the above
+    
+    Answer: B) Neural Networks
+    
+    
+2. In which of the following domains we cannot use neural networks?
+    A) Image Processing 
+    B) Speech Processing
+    C) Fraud Detection 
+    D) None of the above
+    
+    Answer: D) None of the above
+    
+    
+3. Rearrange the following steps of a gradient descent algorithm in correct order of their occurrence?
+    i.  Initialize random weight and bias
+    ii. Repeat the process until you find the best weights of network
+    iii.Change weights and biases for each neuron to reduce the error
+    iv. Calculate error distances between the actual and the predicted value
+    v.  Pass an input through the network and get values from output layer
+        
+        Choose the correct option:
+        A) iv – i – iii – v – ii 
+        B) v – i – iii – iv –ii
+        C) i – v – iv – iii – ii 
+        D) i – v – iii –iv –ii
+        
+        Answer: D) i – v – iii –iv –ii
+        
+        
+4. What is the full form of RNN?
+    A) Recurrent Neural Network 
+    B) Recursive Neural Network
+    C) Redundant Neural Network
+    D) Resurrection Neural Network
+    
+    Answer: A) Recurrent Neural Network 
+    
+    
+5. What is plasticity in neural networks?
+    A) input pattern keeps on changing 
+    B) input pattern has become static
+    C) output pattern keeps on changing 
+    D) output is static
+    
+    Answwer: A) input pattern keeps on changing 
+    
+    
+6. What is stability plasticity dilemma?
+    A) system can neither be stable nor plastic
+    B) static inputs & categorization can’t be handled
+    C) dynamic inputs & categorization can’t be handled
+    D) none of the above
+    
+    Answer: C) dynamic inputs & categorization can’t be handled
+    
+    
+7. Read the following statements:
+        Statement 1: It is possible to train a network well by initializing all the weights as 0
+        Statement 2: It is possible to train a network well by initializing biases as 0
+        Which of the statements given above is true, Choose the correct option?
+        A) Statement 1 is true while Statement 2 is false
+        B) Statement 2 is true while statement 1 is false
+        C) Both statements are true
+        D) Both statements are false
+        
+        Answer: B) Statement 2 is true while statement 1 is false
+        
+        
+8. Which of the following architecture has feedback connections?
+    A) Recurrent Neural network 
+    B) Convolutional Neural Network
+    C) Restricted Boltzmann Machine 
+    D) simple Artificial Neural Network
+    
+    Answer: A) Recurrent Neural network 
+    
+    
+Q9 and Q10 are MCQs with one or more correct answers. Choose all the correct options.
+
+9. In training a neural network, you notice that the loss does not decrease in the few starting epochs. The reason behind it could be
+    A) Learning Rate is low 
+    B) Regularisation parameter is high
+    C) Regularisation parameter is low 
+    D) Stuck at local minima
+    
+    Answer: A) Learning Rate is low 
+            B) Regularisation parameter is high
+            D) Stuck at local minima
+    
+    
+10. Which of the following function(s) can be used to impart non – linearity in a neural network?
+    A) Stochastic Gradient Descent 
+    B) Rectified Linear Unit
+    C) Convolution Function 
+    D) Sigmoid Function
+    
+    Answer: B) Rectified Linear Unit
+    
+    
+Q11 to Q15 are subjective answer type question. Answer them briefly.
+
+11. What is Deep Learning?
+    Answer: Deep learning also known as deep structured learning is part of a broader family of machine learning methods based on 
+            artificial neural networks with representation learning. Learning can be supervised, semi-supervised or unsupervised.
+            Deep-learning architectures such as deep neural networks, deep belief networks, recurrent neural networks and 
+            convolutional neural networks have been applied to fields including 
+                     computer vision
+                     machine vision
+                     speech recognition
+                     natural language processing
+                     audio recognition
+                     social network filtering
+                     machine translation
+                     bioinformatics
+                     drug design
+                     medical image analysis
+                     material inspection and board game programs
+            where they have produced results comparable to and in some cases surpassing human expert performance.
+            
+
+12. What is reinforcement learning?
+    Answer: Reinforcement learning is the training of machine learning models to make a sequence of decisions. The agent learns 
+            to achieve a goal in an uncertain, potentially complex environment. In reinforcement learning, an artificial intelligence 
+            faces a game-like situation. The computer employs trial and error to come up with a solution to the problem. 
+            To get the machine to do what the programmer wants, the artificial intelligence gets either rewards or penalties for the 
+            actions it performs. Its goal is to maximize the total reward.
+            Although the designer sets the reward policy–that is, the rules of the game–he gives the model no hints or suggestions for 
+            how to solve the game. It’s up to the model to figure out how to perform the task to maximize the reward, starting from 
+            totally random trials and finishing with sophisticated tactics and superhuman skills. By leveraging the power of search and 
+            many trials, reinforcement learning is currently the most effective way to hint machine’s creativity. 
+
+
+13. What Are the Differences Between Machine Learning and Deep Learning?
+    Answer:                 Machine Learning                                         Deep Learning
+                Machine Learning is a superset of Deep Learning         Deep Learning is a subset of Machine Learning
+         
+         The data represented in Machine Learning is quite  different  The data representation is used in Deep Learning is quite different 
+            as compared to Deep Learning as it uses structured data              as it uses neural networks(ANN)
+            
+               Machine Learning is an evolution of AI                       Deep Learning is an evolution to Machine Learning
+               
+               Machine learning consists of thousands of data points         Big Data: Millions of data points
+               
+               Outputs: Numerical Value, like classification of score       Anything from numerical values to free-form elements, 
+                                                                                  such as free text and sound
+                                                                                                                       
+               
+14. What is a perceptron?
+    Answer: A Perceptron is an algorithm used for supervised learning of binary classifiers. Binary classifiers decide whether 
+            an input, usually represented by a series of vectors, belongs to a specific class. 
+            A perceptron is a single-layer neural network. They consist of four main parts including 
+            input values, 
+            weights and bias, 
+            net sum, and an activation function.
+            
+            
+
+15. What’s the difference between AI and ML?
+    Answer: Artificial Intelligence
+            1. Artificial intelligence is a technology which enables a machine to simulate human behavior.
+            2. The goal of AI is to make a smart computer system like humans to solve complex problems
+            3. In AI, we make intelligent systems to perform any task like a human.
+            4. Machine learning and deep learning are the two main subsets of AI.
+            5. AI has a very wide range of scope.	Machine learning has a limited scope.
+            6. The main applications of AI are Siri, customer support using catboats, Expert System, Online game playing, 
+               intelligent humanoid robot, etc.
+            7. On the basis of capabilities, AI can be divided into three types, which are, Weak AI, General AI, and Strong AI.
+            8. It includes learning, reasoning, and self-correction.
+            9. AI completely deals with Structured, semi-structured, and unstructured data.
+            
+            Machine learning
+            1. Machine learning is a subset of AI,allows a machine to automatically learn from past data withoutprogramming explicitly.
+            2. The goal of ML is to allow machines to learn from data so that they can give accurate output.
+            3. In ML, we teach machines with data to perform a particular task and give an accurate result.
+            4. Deep learning is a main subset of machine learning.
+            5. Machine learning has a limited scope.
+            6. The main applications of machine learning are Online recommender system, Google search algorithms, Facebook 
+               auto friend tagging suggestions, etc.
+            7. Machine learning can also be divided into mainly three types that are Supervised learning, Unsupervised learning,
+               and Reinforcement learning.
+            8. It includes learning and self-correction when introduced with new data.
+            9. Machine learning deals with Structured and semi-structured data.
+
